@@ -97,6 +97,7 @@ stuLL_t* findLinkedList(stuLL_t *pHEAD, char *targetFamilyName)
 		while ((pW != NULL) && (strcmp(pW->data.fName, targetFamilyName)))
 		{
 			// PROBLEM #2: complete the code for this function
+			pW = pW->pNext;    // going to pNext
 			//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
 		}
 		printf("\n");
