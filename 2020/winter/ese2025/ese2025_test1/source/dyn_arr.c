@@ -57,7 +57,13 @@ int comparo_gName(const void *pA, const void *pB)
 int comparo_grade(const void *pA, const void *pB)
 {
 	// PROBLEM #4: complete the code for this function
-	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
+	stuDA_t student_A = *((stuDA_t*) pA);
+	stuDA_t student_B = *((stuDA_t*) pB);
+	
+	float grade_A = student_A.data.grade;
+	float grade_B = student_B.data.grade;   //get students grades
+
+	return (grade_A - grade_B);
 }
 
 /*
