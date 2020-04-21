@@ -107,11 +107,16 @@ stuDA_t* sortDynamicArray(stuDA_t *pHEAD, const sort_t sort_type,
 	break;
 	case gNamesort:
 		{
-		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_gName);
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_gName);  // dynamic array sorting using qsort()
 		}
 	break;             // fill the code here for Part a)
 	case gradesort:
-		// fill the code here for Part b)
+		{
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_gName);  // here qsort() function is used for sorting of array
+		}
+	break;               // fill the code here for Part b)
+	default:             
+	;                  
 	}
 	return pHEAD;
 }
